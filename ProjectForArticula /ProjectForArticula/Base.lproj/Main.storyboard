@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ProjectForArticula" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uhT-EC-zu1">
+                                <rect key="frame" x="5" y="209" width="383" height="34"/>
+                                <color key="backgroundColor" red="0.83662475554722793" green="0.88693887413065875" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ph1-8y-CjS">
+                                <rect key="frame" x="5" y="273" width="383" height="0.0"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQJ-6t-yOB">
+                                <rect key="frame" x="20" y="84" width="353" height="105"/>
+                                <fontDescription key="fontDescription" name="Didot-Italic" family="Didot" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ph1-8y-CjS" firstAttribute="top" secondItem="uhT-EC-zu1" secondAttribute="bottom" constant="30" id="DFF-Fu-t6L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ph1-8y-CjS" secondAttribute="trailing" constant="5" id="GFJ-9g-wsP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gQJ-6t-yOB" secondAttribute="trailing" constant="20" id="GQs-Bh-33i"/>
+                            <constraint firstItem="gQJ-6t-yOB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KaJ-tk-b8L"/>
+                            <constraint firstItem="uhT-EC-zu1" firstAttribute="top" secondItem="gQJ-6t-yOB" secondAttribute="bottom" constant="20" id="T48-wr-zCW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uhT-EC-zu1" secondAttribute="trailing" constant="5" id="foh-3K-Lce"/>
+                            <constraint firstItem="gQJ-6t-yOB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="sX5-fT-q2h"/>
+                            <constraint firstItem="uhT-EC-zu1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="t16-4R-CGc"/>
+                            <constraint firstItem="uhT-EC-zu1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="u89-yM-w23"/>
+                            <constraint firstItem="Ph1-8y-CjS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="x5O-nm-5pB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inputText" destination="uhT-EC-zu1" id="Slw-k5-Vv6"/>
+                        <outlet property="outputText" destination="Ph1-8y-CjS" id="yQP-y2-Ijd"/>
+                        <outlet property="titleLabel" destination="gQJ-6t-yOB" id="Pmo-E0-MrH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-251.14503816793894" y="-9.1549295774647899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
